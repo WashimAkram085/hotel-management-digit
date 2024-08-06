@@ -1,11 +1,7 @@
-interface Hotel {
-    name: string;
-    location: string;
-    rating: number;
-    price: number;
-};
-
-const hotels: Hotel[] = [
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+;
+const hotels = [
     {
         name: "Hotel 1",
         location: "Location 1",
@@ -25,5 +21,4 @@ const hotels: Hotel[] = [
         price: 400
     }
 ];
-
-export default hotels;
+exports.default = hotels;
