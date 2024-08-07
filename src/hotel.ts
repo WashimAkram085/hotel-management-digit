@@ -1,3 +1,5 @@
+// hotel.ts
+
 interface Hotel {
     name: string;
     location: string;
@@ -25,5 +27,13 @@ const hotels: Hotel[] = [
         price: 400
     }
 ];
+
+// adding new hotels to the list
+
+export function addHotel(name: string, location: string, rating: number, price: number): string {
+    const newHotel: Hotel = { name, location, rating, price };
+    hotels.push(newHotel);
+    return `Hotel ${name} added successfully.`;
+}
 
 export default hotels;
